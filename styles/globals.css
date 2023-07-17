@@ -33,6 +33,7 @@ body {
   box-sizing: border-box;
   scroll-behavior: smooth;
   color-scheme: dark;
+  color: #f1f5f9;
   font-family: "Kanit", sans-serif;
   color: rgb(var(--foreground-rgb));
   background-image: linear-gradient(
