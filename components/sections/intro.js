@@ -24,7 +24,7 @@ function Intro() {
           alt="About me illustration"
           className="illustration -top-80 -right-[225px] "
         />
-        <ul className="list-none mx-4 py-2 px-6  grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 content-between">
+        <ul className="list-none mx-0 sm:mx-4 py-2 px-6 grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 content-between">
           {myInfo.map((info, index) => {
             return (
               <Tilt scale="1.2" key={index}>

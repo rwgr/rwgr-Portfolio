@@ -11,7 +11,7 @@ function MainNavigation() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <header className="font-extrabold bg-secondaryBlue flex justify-between min-h-fit items-center w-full px-8 fixed top-0 z-20 shadow-xl">
+    <header className="font-extrabold bg-secondaryBlue flex justify-between min-h-fit items-center w-full px-8 fixed top-0 z-20 shadow-xl text-slate-100">
       <div className="p-2 flex gap-4 items-center">
         <Link to="hero" spy={true} smooth={true} offset={-70} duration={500}>
           <Image
