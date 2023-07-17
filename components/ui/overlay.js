@@ -15,9 +15,10 @@ function Overlay() {
         <div className="flex justify-center items-center">
           <Image
             src={imageCtx.image}
-            className="transition-all duration-300 ease-out"
             height={540}
             width={960}
+            alt="Project screenshot"
+            className="transition-all duration-300 ease-out"
           />
         </div>
       </div>
@@ -25,6 +26,7 @@ function Overlay() {
         src="/close.svg"
         height={50}
         width={50}
+        alt="Close icon"
         className="fixed top-20 right-10 fill-white h-10 hover:p-1 hover:fill-slate-300 transition-all duration-300 ease-out cursor-pointer scale-150"
       />
     </div>

@@ -3,6 +3,7 @@ import ProjectCard from "../ProjectCard.js";
 import SectionWrapper from "../SectionWrapper.js";
 import SectionIntro from "../SectionIntro.js";
 import Image from "next/image.js";
+import projectIllustration from "../../assets/illustrations/programming.svg";
 
 function Projects(props) {
   return (
@@ -18,9 +19,10 @@ function Projects(props) {
       />
       <div className="relative">
         <Image
-          src="./programming.svg"
+          src={projectIllustration}
           width={350}
           height={350}
+          alt="Programming illustration"
           className="illustration -top-96 right-0"
         />
         <ul className="mx-auto flex gap-20 flex-wrap justify-center ">

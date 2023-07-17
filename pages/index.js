@@ -8,7 +8,6 @@ import Skills from "../components/sections/skills";
 import Projects from "@/components/sections/projects";
 import Tutorials from "@/components/sections/tutorials";
 import Contact from "@/components/sections/contact";
-import TestThree from "@/components/test/test-three.js";
 import Overlay from "@/components/ui/overlay.js";
 
 import { useContext } from "react";

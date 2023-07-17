@@ -3,9 +3,10 @@ import Image from "next/image";
 import SectionWrapper from "../SectionWrapper.js";
 import SectionIntro from "../SectionIntro.js";
 import { skillsSectionIntro, training } from "../../content/index.js";
-import linkIcon from "/public/link.svg";
+import linkIcon from "../../assets/icons/linkIcon.svg";
 import Link from "next/link.js";
 import { motion } from "framer-motion";
+import skillsIllustration from "../../assets/illustrations/personal-info.svg";
 
 function isOdd(num) {
   return num % 2;
@@ -25,10 +26,11 @@ function Skills() {
       />
       <div className="flex flex-col lg:flex-row gap-16 lg:gap-5 relative">
         <Image
-          src="./personal-info.svg"
+          src={skillsIllustration}
           width={500}
-          height={500}
-          className="illustration -top-96 right-0"
+          height="auto"
+          alt="Personal information illustration"
+          className="illustration -top-96 -right-16"
         />
         <ul className="grid grid-cols-3 md:grid-cols-4 gap-10 mx-auto shadow-2xl p-4 items-start">
           {skillsList.map((skill, index) => {
@@ -52,7 +54,7 @@ function Skills() {
                   alt={skill.name}
                   width={60}
                   height={60}
-                  className="h-auto ghost-remove"
+                  className="ghost-remove"
                 />
               </motion.li>
             );
@@ -79,6 +81,7 @@ function Skills() {
                       src={linkIcon}
                       width={40}
                       height={40}
+                      alt="Link icon"
                       className="hover:scale-90 rounded-lg p-1 hover:bg-highlightGreen transition duration-300 ease-in-out"
                     />
 

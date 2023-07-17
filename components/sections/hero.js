@@ -1,5 +1,5 @@
 import Image from "next/image";
-import avatar from "../../assets/avatar2-transparent.png";
+import avatar from "../../assets/bird-transparent.png";
 import SectionWrapper from "../SectionWrapper";
 import { heroText } from "../../content/index.js";
 
@@ -21,6 +21,7 @@ function Hero() {
             src={avatar}
             width={250}
             height={250}
+            alt="Robin bird image"
             className="absolute top-80 lg:top-36  left-88 -right-10 lg:right-0 mx-auto my-auto -z-10 invisible sm:visible scale-75 md:scale-100 "
           />
         </div>

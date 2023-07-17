@@ -4,6 +4,7 @@ import { contactSectionIntro } from "@/content/index.js";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Image from "next/image.js";
+import contactIllustration from "../../assets/illustrations/message-sent.svg";
 
 function Contact() {
   const [loading, setLoading] = useState(false);
@@ -72,9 +73,10 @@ function Contact() {
         />
         <div className="relative">
           <Image
-            src="./message-sent.svg"
+            src={contactIllustration}
             width={400}
-            height={400}
+            height="auto"
+            alt="Message sent illustration"
             className="illustration -top-[350px] right-12"
           />
           <form

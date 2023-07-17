@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import Image from "next/image.js";
 import Link from "next/link.js";
 
-import github from "../assets/github.svg";
-import youtube from "../assets/youtube.svg";
+import github from "../assets/icons/githubIcon.svg";
+import youtube from "../assets/icons/youtubeIcon.svg";
 import Tilt from "react-parallax-tilt";
 import { useContext } from "react";
 import ImageContext from "../store/imageContext.js";
@@ -39,7 +39,6 @@ function ProjectCard(props) {
                         alt="Skill icon"
                         width={35}
                         height={35}
-                        className="max-h-fit"
                       />
                     </li>
                   );

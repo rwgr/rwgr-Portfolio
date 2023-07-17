@@ -61,18 +61,18 @@ textarea {
 }
 
 .bg-intro {
-  background-image: url("/backgrounds/bg-intro.svg");
+  background-image: url("../assets/backgrounds/bg-intro.svg");
 }
 
 .bg-skills {
-  background-image: url("/backgrounds/bg-skills.svg");
+  background-image: url("../assets/backgrounds/bg-skills.svg");
 }
 
 .bg-projects {
-  background-image: url("/backgrounds/bg-projects.svg");
+  background-image: url("../assets/backgrounds/bg-projects.svg");
 }
 .bg-contact {
-  background-image: url("/backgrounds/bg-contact.svg");
+  background-image: url("../assets/backgrounds/bg-contact.svg");
 }
 
 .bg-intro,

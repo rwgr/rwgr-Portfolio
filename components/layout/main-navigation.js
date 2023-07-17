@@ -2,6 +2,9 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import Image from "next/image";
 import { useState } from "react";
 import { navLinks } from "../../content/index.js";
+import closeIcon from "../../assets/icons/closeIcon.svg";
+import menuIcon from "../../assets/icons/menuIcon.svg";
+import logo from "../../assets/logo.svg";
 
 function MainNavigation() {
   const [active, setActive] = useState("");
@@ -12,14 +15,14 @@ function MainNavigation() {
       <div className="p-2 flex gap-4 items-center">
         <Link to="hero" spy={true} smooth={true} offset={-70} duration={500}>
           <Image
-            src="/logo.svg"
+            src={logo}
             width={60}
-            height={60}
+            height="auto"
             alt="Robin's Portfolio Logo"
-            className="cursor-pointer"
+            className="cursor-pointer object-contain"
           />
         </Link>
-        <h1 className="text-lg">Robin's Portfolio</h1>
+        <h1 className="text-lg">Robin&apos;s Portfolio</h1>
       </div>
       <nav>
         <ul className="list-none sm:flex hidden flex-row gap-10">
@@ -49,7 +52,7 @@ function MainNavigation() {
         </ul>
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <Image
-            src={toggleMenu ? "/close.svg" : "/menu.svg"}
+            src={toggleMenu ? closeIcon : menuIcon}
             alt="Menu"
             width={40}
             height={40}

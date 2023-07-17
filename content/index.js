@@ -25,6 +25,11 @@ import threejs from "../assets/skills/threejs.svg";
 import vitejs from "../assets/skills/vitejs.svg";
 import vue from "../assets/skills/vue.svg";
 
+import userIcon from "../assets/icons/userIcon.svg";
+import emailIcon from "../assets/icons/emailIcon.svg";
+import locationIcon from "../assets/icons/locationIcon.svg";
+import githubIcon from "../assets/icons/githubIcon.svg";
+
 export const navLinks = [
   {
     id: "about",
@@ -142,6 +147,33 @@ export const contactSectionIntro = {
   intro:
     "Please get in touch if you have any questions or would like to work together!",
 };
+
+export const myInfo = [
+  {
+    icon: userIcon,
+    alt: "User Icon",
+    text: "Robin Wilschere-Green",
+    link: false,
+  },
+  {
+    icon: emailIcon,
+    alt: "Email Icon",
+    text: "rlinden91@gmail.com",
+    link: true,
+  },
+  {
+    icon: locationIcon,
+    alt: "Location Icon",
+    text: "Devon, England",
+    link: false,
+  },
+  {
+    icon: githubIcon,
+    alt: "Github Icon",
+    text: "github.com/rwgr",
+    link: true,
+  },
+];
 
 export const training = [
   {
