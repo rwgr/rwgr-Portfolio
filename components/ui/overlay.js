@@ -2,6 +2,7 @@ import { useContext } from "react";
 import ImageContext from "../../store/imageContext.js";
 import Image from "next/image.js";
 import { motion } from "framer-motion";
+import closeIcon from "../../assets/icons/closeIcon.svg";
 
 function Overlay() {
   const imageCtx = useContext(ImageContext);
@@ -23,7 +24,7 @@ function Overlay() {
         </div>
       </div>
       <Image
-        src="/close.svg"
+        src={closeIcon}
         height={50}
         width={50}
         alt="Close icon"

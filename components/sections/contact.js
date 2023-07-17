@@ -68,7 +68,7 @@ function Contact() {
       >
         <SectionIntro
           subHeading="Contact"
-          section="Send me a message!"
+          section="Send me a message"
           introduction={contactSectionIntro.intro}
         />
         <div className="relative">
@@ -77,7 +77,7 @@ function Contact() {
             width={400}
             height="auto"
             alt="Message sent illustration"
-            className="illustration -top-[350px] right-12"
+            className="illustration -top-[330px] right-12"
           />
           <form
             className="py-10 px-4 sm:px-6  bg-secondaryBlue items-center text-xl font-medium sm:font-semibold max-h-[520px] min-w-[200px] sm:min-w-[600px] max-w-[900px] mx-2 sm:mx-auto shadow-xl -mt-10  rounded-xl flex flex-col gap-6 "
