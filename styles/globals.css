@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --clr-1: #318f70;
+  --clr-2: #329e7f;
+  --clr-3: #32ad8f;
+  --clr-4: #30bca0;
+  --clr-5: #2ccbb1;
+  --clr-6: #1d2d40;
+  --clr-7: #1b363d;
+  --clr-7: #162234;
+  --clr-8: #0f2e29;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color-scheme: dark;
+  font-family: "Kanit", sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background-image: linear-gradient(
+    to right bottom,
+    var(--clr-1),
+    var(--clr-2),
+    var(--clr-3),
+    var(--clr-4),
+    var(--clr-5)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input,
+textarea {
+  font-family: "Kanit", sans-serif;
+  background-color: var(--clr-6);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  outline: none;
+  color: rgb(var(--foreground-rgb));
+  resize: none;
+}
+
+.bg-intro {
+  background-image: url("/backgrounds/bg-intro.svg");
+}
+
+.bg-skills {
+  background-image: url("/backgrounds/bg-skills.svg");
+}
+
+.bg-projects {
+  background-image: url("/backgrounds/bg-projects.svg");
+}
+.bg-contact {
+  background-image: url("/backgrounds/bg-contact.svg");
+}
+
+.bg-intro,
+.bg-skills,
+.bg-projects,
+.bg-contact {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.infoIcon {
+  @apply rounded-md cursor-pointer transition-all duration-300 ease-linear p-0.5 hover:bg-primaryGreen;
+}
+
+.illustration {
+  @apply absolute -z-10 invisible xl:visible scale-0 xl:scale-100;
+}
+
+/* Card animated background */
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
+
+.card {
+  position: relative;
+  border-radius: 0.5rem;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  justify-items: center;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+}
+
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  inset: -0.5rem;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-6),
+    var(--clr-2),
+    var(--clr-5),
+    var(--clr-2),
+    var(--clr-6)
+  );
+  border-radius: inherit;
+  animation: rotation 20s linear infinite;
+  z-index: -1;
+}
+
+.card::after {
+  filter: blur(3.5rem);
+}
+
+/* Card animated background */
+
+.ghost-remove {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
