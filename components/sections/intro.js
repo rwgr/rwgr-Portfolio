@@ -29,16 +29,32 @@ function Intro() {
             return (
               <Tilt scale="1.2" key={index}>
                 <li className="flex gap-2 items-center">
-                  <Image
-                    src={info.icon}
-                    alt={info.alt}
-                    title={info.title}
-                    width={50}
-                    height={50}
-                    className={`object-contain ${
-                      info.link ? "infoIcon " : null
-                    }`}
-                  />
+                  {!info.link ? (
+                    <Image
+                      src={info.icon}
+                      alt={info.alt}
+                      title={info.title}
+                      width={50}
+                      height={50}
+                      className={`object-contain ${
+                        info.link ? "infoIcon " : null
+                      }`}
+                    />
+                  ) : (
+                    <Link href={info.link} target="_blank">
+                      <Image
+                        src={info.icon}
+                        alt={info.alt}
+                        title={info.title}
+                        width={50}
+                        height={50}
+                        className={`object-contain ${
+                          info.link ? "infoIcon " : null
+                        }`}
+                      />
+                    </Link>
+                  )}
+
                   <span>{info.text}</span>
                 </li>
               </Tilt>

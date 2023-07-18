@@ -1,9 +1,32 @@
-import localCrimeChecker from "../assets/projects/localCrimeChecker.png";
-import bookCollectionManager from "../assets/projects/bookCollectionManager.png";
-import ecoElectronics from "../assets/projects/ecoElectronics.png";
-import fullStackForum from "../assets/projects/fullStackForum.png";
-import coachFinder from "../assets/projects/coachFinder.png";
-import vuePortfolio from "../assets/projects/vuePortfolio.png";
+import localcrimechecker0 from "../assets/projects/local-crime-checker/localcrimechecker0.png";
+import localcrimechecker1 from "../assets/projects/local-crime-checker/localcrimechecker1.png";
+import localcrimechecker2 from "../assets/projects/local-crime-checker/localcrimechecker2.png";
+import localcrimechecker3 from "../assets/projects/local-crime-checker/localcrimechecker3.png";
+import bookCollectionmanager0 from "../assets/projects/book-collection-manager/bookcollectionmanager0.png";
+import bookCollectionmanager1 from "../assets/projects/book-collection-manager/bookcollectionmanager1.png";
+import bookCollectionmanager2 from "../assets/projects/book-collection-manager/bookcollectionmanager2.png";
+import bookCollectionmanager3 from "../assets/projects/book-collection-manager/bookcollectionmanager3.png";
+import bookCollectionmanager4 from "../assets/projects/book-collection-manager/bookcollectionmanager4.png";
+import coachfinder0 from "../assets/projects/coach-finder/coachfinder0.png";
+import coachfinder1 from "../assets/projects/coach-finder/coachfinder1.png";
+import coachfinder2 from "../assets/projects/coach-finder/coachfinder2.png";
+import coachfinder3 from "../assets/projects/coach-finder/coachfinder3.png";
+import ecoelectronics0 from "../assets/projects/ecoelectronics/ecoelectronics0.png";
+import ecoelectronics1 from "../assets/projects/ecoelectronics/ecoelectronics1.png";
+import ecoelectronics2 from "../assets/projects/ecoelectronics/ecoelectronics2.png";
+import ecoelectronics3 from "../assets/projects/ecoelectronics/ecoelectronics3.png";
+import ecoelectronics4 from "../assets/projects/ecoelectronics/ecoelectronics4.png";
+import ecoelectronics5 from "../assets/projects/ecoelectronics/ecoelectronics5.png";
+import ecoelectronics6 from "../assets/projects/ecoelectronics/ecoelectronics6.png";
+import fullstackforum0 from "../assets/projects/fullstack-forum/fullstackforum0.png";
+import fullstackforum1 from "../assets/projects/fullstack-forum/fullstackforum1.png";
+import fullstackforum2 from "../assets/projects/fullstack-forum/fullstackforum2.png";
+import vueportfolio0 from "../assets/projects/vue-portfolio/vueportfolio0.png";
+import vueportfolio1 from "../assets/projects/vue-portfolio/vueportfolio1.png";
+import vueportfolio2 from "../assets/projects/vue-portfolio/vueportfolio2.png";
+import vueportfolio3 from "../assets/projects/vue-portfolio/vueportfolio3.png";
+import vueportfolio4 from "../assets/projects/vue-portfolio/vueportfolio4.png";
+
 import findACoach from "../assets/projects/findACoach.png";
 import natours from "../assets/projects/natours.png";
 import forkify from "../assets/projects/forkify.png";
@@ -154,12 +177,13 @@ export const myInfo = [
     alt: "User Icon",
     text: "Robin Wilschere-Green",
     link: false,
+    href: null,
   },
   {
     icon: emailIcon,
     alt: "Email Icon",
     text: "rlinden91@gmail.com",
-    link: true,
+    link: "mailto:rlinden91@gmail.com",
   },
   {
     icon: locationIcon,
@@ -171,7 +195,7 @@ export const myInfo = [
     icon: githubIcon,
     alt: "Github Icon",
     text: "github.com/rwgr",
-    link: true,
+    link: "https://github.com/rwgr",
   },
 ];
 
@@ -208,7 +232,7 @@ export const projectsList = [
     title: "Local Crime Checker",
     description:
       "Web application utilising the UK Police public crime API. Allows a user to view crime data for an area, and offers comparisons with previous months or years allowing a user to see trends and changes in crime within the area specified.",
-    image: localCrimeChecker,
+    image: localcrimechecker0,
     demo: "https://www.youtube.com/watch?v=iwf1tJdDMwc",
     code: "https://github.com/rwgr/Local-Crime-Checker",
     skills: [html, css, javascript, vue],
@@ -218,17 +242,17 @@ export const projectsList = [
     title: "Book Collection Manager",
     description:
       "Create Read Update & Delete (CRUD) application designed to simplify the organisation of a user's book collection. Utilising Vue Router for routing, Vuex for state management, Vuelidate for form validation and the Open Library API for adding books via their identifiers.",
-    image: bookCollectionManager,
+    image: bookCollectionmanager0,
     demo: "https://www.youtube.com/watch?v=xIU1O3Cqcw4",
     code: "https://github.com/rwgr/Book-Collection-Manager",
     skills: [html, css, javascript, vue],
   },
   {
     id: "3",
-    title: "ecoElectronics Store Front",
+    title: "ecoElectronics",
     description:
       "Mock-up of a store front for a conceptual environmentally friendly online computer retailer using modern web design principles.",
-    image: ecoElectronics,
+    image: ecoelectronics0,
     demo: "https://www.youtube.com/watch?v=M_DW04ho_G4",
     code: "https://github.com/rwgr/ecoElectronics",
     skills: [html, css, javascript, vue],
@@ -238,7 +262,7 @@ export const projectsList = [
     title: "Full Stack Forum",
     description:
       "A basic full stack forum project. Users can sign-up and login allowing them to create posts and leave comments. Users can edit and delete their own posts and comments, change their password and view other users' posts and comments.",
-    image: fullStackForum,
+    image: fullstackforum0,
     demo: "https://www.youtube.com/watch?v=Q7wpximrd9Q",
     code: "https://github.com/rwgr/Full-Stack-Forum",
     skills: [nodejs, expressjs, mongodb, pug],
@@ -248,7 +272,7 @@ export const projectsList = [
     title: "Coach Finder",
     description:
       "Web application for facilitating contact between coaches advertising their services and their customers. Users can contact any coach via using the in-built messaging system. A user can also register as a coach, and receive messages themselves. (continued tutorial project,  originally started as part of a Udemy course, with added features).",
-    image: coachFinder,
+    image: coachfinder0,
     demo: "https://www.youtube.com/watch?v=Vb4FmRDL3KA",
     code: "https://github.com/rwgr/Coach-Finder",
     skills: [html, css, javascript, vue],
@@ -257,8 +281,8 @@ export const projectsList = [
     id: "6",
     title: "Vue Portfolio",
     description:
-      "This portfolio project. Made using Vue, utilising Tailwind CSS for styling and Three.js to create the animated background that can be enabled in the sidebar.",
-    image: vuePortfolio,
+      "My previous portfolio, made using Vue, utilising Tailwind CSS for styling and Three.js to create an animated background. The background can be enabled in the sidebar and comes with controls to change its appearance.",
+    image: vueportfolio0,
     demo: "https://www.youtube.com/watch?v=iwf1tJdDMwc",
     code: "https://github.com/rwgr/Local-Crime-Checker",
     skills: [vue, threejs, tailwind, javascript],
@@ -297,5 +321,57 @@ export const tutorials = [
       "Tutorial project completed as part of HTML & CSS Udemy Course. This is a responsive webpage built using modern design JavaScript and CSS.",
     image: omnifood,
     code: "https://github.com/rwgr/Tutorial-Omnifood",
+  },
+];
+
+export const projectImages = [
+  {
+    title: "localcrimechecker",
+    images: [
+      localcrimechecker0,
+      localcrimechecker1,
+      localcrimechecker2,
+      localcrimechecker3,
+    ],
+  },
+  {
+    title: "bookcollectionmanager",
+    images: [
+      bookCollectionmanager0,
+      bookCollectionmanager1,
+      bookCollectionmanager2,
+      bookCollectionmanager3,
+      bookCollectionmanager4,
+    ],
+  },
+  {
+    title: "ecoelectronics",
+    images: [
+      ecoelectronics0,
+      ecoelectronics1,
+      ecoelectronics2,
+      ecoelectronics3,
+      ecoelectronics4,
+      ecoelectronics5,
+      ecoelectronics6,
+    ],
+  },
+  {
+    title: "fullstackforum",
+    images: [fullstackforum0, fullstackforum1, fullstackforum2],
+  },
+  {
+    title: "coachfinder",
+    images: [coachfinder0, coachfinder1, coachfinder2, coachfinder3],
+  },
+  {
+    title: "vueportfolio",
+    images: [
+      vueportfolio0,
+      vueportfolio1,
+      vueportfolio2,
+      vueportfolio3,
+      vueportfolio4,
+    ],
   },
 ];

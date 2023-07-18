@@ -153,3 +153,7 @@ textarea {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+
+.overlayIcon {
+  @apply transition-all duration-300 ease-out cursor-pointer scale-75 lg:scale-125 hover:p-2 z-20 rounded-3xl bg-highlightBlue lg:bg-opacity-0 hover:bg-highlightGreen mx-5;
+}
