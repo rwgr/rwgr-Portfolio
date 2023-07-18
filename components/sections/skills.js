@@ -21,7 +21,7 @@ function Skills() {
     >
       <SectionIntro
         subHeading="Training"
-        section="Skills"
+        section="Skills."
         introduction={skillsSectionIntro.intro}
       />
       <div className="flex flex-col lg:flex-row gap-16 lg:gap-5 relative">
@@ -74,7 +74,7 @@ function Skills() {
                     href={course.link}
                     target="_blank"
                     className={`flex gap-5 items-center rounded-lg p-2 w-full border-b-2 border-highlightGreen ${
-                      isOdd(index) ? "bg-secondaryGreen" : " bg-secondaryGreen"
+                      isOdd(index) ? "bg-primaryBlue" : " bg-primaryBlue"
                     } hover:border-white hover:border-b-4  cursor-pointer  `}
                   >
                     <Image

@@ -199,6 +199,12 @@ export const myInfo = [
   },
 ];
 
+export const myCurrent = {
+  current:
+    "To further my development skills, I am currently in the process of completing a course that focuses on PHP, Content Management Systems(CMS) creation, and MySQL.",
+  link: "https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/",
+};
+
 export const training = [
   {
     title: "Next.js & React - The Complete Guide (incl. Two Paths!)",
@@ -251,7 +257,7 @@ export const projectsList = [
     id: "3",
     title: "ecoElectronics",
     description:
-      "Mock-up of a store front for a conceptual environmentally friendly online computer retailer using modern web design principles.",
+      "In this project, I created a visually striking mock-up of an online computer retailer with a strong emphasis on environmental sustainability. Drawing inspiration from modern web design principles, I crafted a captivating storefront that showcases the concept of an environmentally friendly tech brand.",
     image: ecoelectronics0,
     demo: "https://www.youtube.com/watch?v=M_DW04ho_G4",
     code: "https://github.com/rwgr/ecoElectronics",

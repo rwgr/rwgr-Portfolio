@@ -14,7 +14,7 @@ function Projects(props) {
     >
       <SectionIntro
         subHeading="Experience"
-        section="Projects"
+        section="Projects."
         introduction={projectSectionIntro.intro}
       />
       <div className="relative">

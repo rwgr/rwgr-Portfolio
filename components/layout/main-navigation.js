@@ -62,7 +62,7 @@ function MainNavigation() {
           <div
             className={`${
               !toggleMenu ? "hidden" : "flex"
-            } p-6 bg-secondaryGreen absolute top-20 right-0 min-w-[140px] z-10 rounded-xl`}
+            } p-6 bg-shadeGreen border-l-4 border-b-4 border-highlightGreen shadow-xl absolute top-20 right-0 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className="list-none  flex flex-col gap-4 justify-end items-start">
               {navLinks.map((link) => {

@@ -5,18 +5,18 @@ import SectionWrapper from "../SectionWrapper.js";
 import SectionIntro from "../SectionIntro.js";
 import Tilt from "react-parallax-tilt";
 import aboutIllustration from "../../assets/illustrations/about.svg";
-import { myInfo } from "../../content/index.js";
+import { myInfo, myCurrent } from "../../content/index.js";
 
 function Intro() {
   return (
     <SectionWrapper bgColour="bg-secondaryBlue" background="" elementId="about">
       <SectionIntro
-        subHeading="Introduction"
-        section="About Me"
+        subHeading="About"
+        section="About me."
         introduction={introduction.intro}
       />
 
-      <div className=" bg-primaryBlue gap-6 py-4 items-center text-xl font-medium sm:font-semibold max-h-[400px] max-w-[900px] mx-auto shadow-xl -mt-10 border-4 border-highlightGreen relative">
+      <div className="flex flex-col bg-primaryBlue gap-6 py-4 items-center text-xl font-medium sm:font-semibold max-h-fit lg:max-h-[400px] max-w-[900px] mx-auto shadow-xl -mt-10 border-4 border-highlightGreen relative">
         <Image
           src={aboutIllustration}
           width={350}
@@ -34,8 +34,8 @@ function Intro() {
                       src={info.icon}
                       alt={info.alt}
                       title={info.title}
-                      width={50}
-                      height={50}
+                      width={60}
+                      height={60}
                       className={`object-contain ${
                         info.link ? "infoIcon " : null
                       }`}
@@ -46,8 +46,8 @@ function Intro() {
                         src={info.icon}
                         alt={info.alt}
                         title={info.title}
-                        width={50}
-                        height={50}
+                        width={60}
+                        height={60}
                         className={`object-contain ${
                           info.link ? "infoIcon " : null
                         }`}
@@ -61,6 +61,21 @@ function Intro() {
             );
           })}
         </ul>
+
+        <div className="flex  content-between py-7  mx-auto sm:mx-4 px-4 lg:px-2 gap-5 lg:gap-10 border-t-4 border-highlightGreen align-middle justify-center">
+          <h3 className="text-3xl">In Progress</h3>
+          <div className="flex flex-col gap-4 w-4/6 text-lg">
+            <p className="">{myCurrent.current}</p>
+            <p>
+              You can find the course{" "}
+              <Link href={myCurrent.link} target="_blank">
+                <span className="text-highlightGreen hover:text-primaryGreen transition-all transform duration:100">
+                  on Udemy.
+                </span>
+              </Link>
+            </p>
+          </div>
+        </div>
       </div>
     </SectionWrapper>
   );

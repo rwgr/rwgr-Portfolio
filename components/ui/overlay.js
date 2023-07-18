@@ -16,22 +16,22 @@ function Overlay() {
           <Image
             src={imageCtx.image}
             height={540}
-            width={960}
+            width="auto"
             alt="Project screenshot"
             className="transition-all duration-300 ease-out"
           />
           <Image
             src={rightIcon}
-            height={80}
-            width={80}
+            height={70}
+            width={70}
             alt="Right icon"
             className="absolute top-72 right-0 xl:-right-28 lg:-right-16  overlayIcon"
             onClick={() => imageCtx.showImage("right")}
           />
           <Image
             src={leftIcon}
-            height={80}
-            width={80}
+            height={70}
+            width={70}
             alt="Right icon"
             className="absolute top-72 left-0 xl:-left-28 lg:-left-16 overlayIcon"
             onClick={() => imageCtx.showImage("left")}

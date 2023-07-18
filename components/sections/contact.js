@@ -68,7 +68,7 @@ function Contact() {
       >
         <SectionIntro
           subHeading="Contact"
-          section="Send me a message"
+          section="Send me a message."
           introduction={contactSectionIntro.intro}
         />
         <div className="relative">
