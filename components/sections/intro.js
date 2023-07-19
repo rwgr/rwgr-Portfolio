@@ -6,6 +6,7 @@ import SectionIntro from "../SectionIntro.js";
 import Tilt from "react-parallax-tilt";
 import aboutIllustration from "../../assets/illustrations/about.svg";
 import { myInfo, myCurrent } from "../../content/index.js";
+import { motion } from "framer-motion";
 
 function Intro() {
   return (
@@ -14,11 +15,18 @@ function Intro() {
       background="bg-intro"
       elementId="about"
     >
-      <SectionIntro
-        subHeading="About"
-        section="About me."
-        introduction={introduction.intro}
-      />
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.4 }}
+        transition={{ duration: 1 }}
+      >
+        <SectionIntro
+          subHeading="About"
+          section="About me."
+          introduction={introduction.intro}
+        />
+      </motion.div>
 
       <div className="flex flex-col bg-secondaryBlue gap-6 py-4 items-center text-xl font-medium sm:font-semibold max-h-fit lg:max-h-[400px] max-w-[900px] mx-auto shadow-xl -mt-10 border-4 border-highlightGreen relative">
         <Image

@@ -2,6 +2,7 @@ import Image from "next/image";
 import avatar from "../../assets/bird-transparent.png";
 import SectionWrapper from "../SectionWrapper";
 import { heroText } from "../../content/index.js";
+import { Link } from "react-scroll";
 
 import { MeshDistortMaterial, OrbitControls, Sphere } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
@@ -18,6 +19,17 @@ function Hero() {
           <h2 className="text-2xl text-white font-bold w-full sm:w-2/3">
             {heroText.intro}
           </h2>
+
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="cursor-pointer z-10 bg-highlightGreen text-white font-semibold px-8 text-xl py-3 rounded-full shadow-lg hover:bg-white hover:text-highlightGreen transform transition-all  duration-300 ease-in-out"
+          >
+            Contact Me
+          </Link>
           <div className="absolute h-[300px] w-[280px] sm:h-[700px] sm:w-[700px] mx-auto left-0 sm:-left-44 md:-left-0">
             <Canvas
               camera={{ fov: 40, position: [0, 0, 5] }}

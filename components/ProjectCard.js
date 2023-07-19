@@ -59,19 +59,21 @@ function ProjectCard(props) {
                     />
                   </Link>
                 </motion.div>
-                <motion.div
-                  whileHover={{ scale: 1.5 }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <Link href={props.project.demo} target="_blank">
-                    <Image
-                      src={youtube}
-                      alt="YouTube icon"
-                      width={35}
-                      height={35}
-                    />
-                  </Link>
-                </motion.div>
+                {props.project.demo && (
+                  <motion.div
+                    whileHover={{ scale: 1.5 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <Link href={props.project.demo} target="_blank">
+                      <Image
+                        src={youtube}
+                        alt="YouTube icon"
+                        width={35}
+                        height={35}
+                      />
+                    </Link>
+                  </motion.div>
+                )}
               </div>
             </div>
             <p>{props.project.description}</p>

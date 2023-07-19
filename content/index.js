@@ -26,6 +26,7 @@ import vueportfolio1 from "../assets/vueportfolio1.png";
 import vueportfolio2 from "../assets/vueportfolio2.png";
 import vueportfolio3 from "../assets/vueportfolio3.png";
 import vueportfolio4 from "../assets/vueportfolio4.png";
+import portfolio0 from "../assets/portfolio0.png";
 
 import findACoach from "../assets/projects/findACoach.png";
 import natours from "../assets/projects/natours.png";
@@ -141,7 +142,7 @@ export const heroText = {
   subheading: "Welcome to my portfolio, I'm",
   name: "Robin",
   intro:
-    "I'm a full-stack web developer living in Devon currently looking for a junior position in a web development role.",
+    "I'm a full-stack web developer from Devon, England. I'm currently looking for a junior position in a web development role.",
 };
 
 export const introduction = {
@@ -292,6 +293,16 @@ export const projectsList = [
     demo: "https://www.youtube.com/watch?v=iwf1tJdDMwc",
     code: "https://github.com/rwgr/Local-Crime-Checker",
     skills: [vue, threejs, tailwind, javascript],
+  },
+  {
+    id: "7",
+    title: "This Portfolio",
+    description:
+      "My current portfolio hosted at rwgr.dev. Produced using React, Next.js, JavaScript Tailwind CSS and Three.js. A showcase of my web development skills, with a focus on modern design principles and user experience. ",
+    image: portfolio0,
+    demo: null,
+    code: "https://github.com/rwgr/rwgr-Portfolio",
+    skills: [react, nextjs, tailwind, threejs],
   },
 ];
 

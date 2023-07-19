@@ -4,19 +4,19 @@ import { useState } from "react";
 import { navLinks } from "../../content/index.js";
 import closeIcon from "../../assets/icons/closeIcon.svg";
 import menuIcon from "../../assets/icons/menuIcon.svg";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/logo1.svg";
 
 function MainNavigation() {
   const [active, setActive] = useState("");
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <header className="font-extrabold bg-primaryBlue flex justify-between min-h-fit items-center w-full px-8 fixed top-0 z-20 shadow-xl text-slate-100">
+    <header className="font-extrabold bg-primaryBlue flex justify-between min-h-fit items-center w-full px-8 fixed top-0 z-20 shadow-xl text-white">
       <div className="p-2 flex gap-4 items-center">
         <Link to="hero" spy={true} smooth={true} offset={-70} duration={500}>
           <Image
             src={logo}
-            width={60}
+            width={80}
             height="auto"
             alt="Robin's Portfolio Logo"
             className="cursor-pointer object-contain"
@@ -31,9 +31,7 @@ function MainNavigation() {
               <li
                 key={link.id}
                 className={`${
-                  active === link.title
-                    ? "text-highlightGreen"
-                    : "text-slate-100"
+                  active === link.title ? "text-highlightGreen" : "text-white"
                 } hover:text-highlightGreen text-xl font-medium cursor-pointer`}
               >
                 <Link
@@ -72,7 +70,7 @@ function MainNavigation() {
                     className={`${
                       active === link.title
                         ? "text-highlightGreen"
-                        : "text-slate-100"
+                        : "text-white"
                     } hover:text-highlightGreen text-lg font-medium cursor-pointer`}
                   >
                     <Link

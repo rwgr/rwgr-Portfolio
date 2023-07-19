@@ -5,6 +5,7 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Image from "next/image.js";
 import contactIllustration from "../../assets/illustrations/message-sent.svg";
+import { motion } from "framer-motion";
 
 function Contact() {
   const [loading, setLoading] = useState(false);
@@ -71,14 +72,22 @@ function Contact() {
           section="Send me a message."
           introduction={contactSectionIntro.intro}
         />
-        <div className="relative">
-          <Image
-            src={contactIllustration}
-            width={400}
-            height="auto"
-            alt="Message sent illustration"
-            className="illustration -top-[330px] right-12"
-          />
+        <div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, amount: 0.4 }}
+            transition={{ duration: 1 }}
+            className="relative"
+          >
+            <Image
+              src={contactIllustration}
+              width={400}
+              height="auto"
+              alt="Message sent illustration"
+              className="illustration -top-[330px] right-12"
+            />
+          </motion.div>
           <form
             className="py-10 px-4 sm:px-6  bg-primaryBlue items-center text-xl font-medium sm:font-semibold max-h-[520px] min-w-[200px] sm:min-w-[600px] max-w-[900px] mx-2 sm:mx-auto shadow-xl -mt-10  rounded-xl flex flex-col gap-6 "
             onSubmit={handleSubmit}
@@ -122,7 +131,7 @@ function Contact() {
             <button
               type="submit"
               className="hover:text-highlightGreen  transform duration-1000
-           ease-out bg-primaryBlue hover:bg-secondaryBlue text-white font-bold py-2 px-4 rounded-lg shadow-xl"
+           ease-out bg-primaryBlue hover:bg-secondaryBlue text-white font-bold py-2 px-4 rounded-lg shadow-xl "
             >
               {loading ? "Sending..." : "Send"}
             </button>
