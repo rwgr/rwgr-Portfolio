@@ -8,7 +8,7 @@ const ImageContext = createContext({
   nextImage: function () {},
 });
 
-export function ImageContextProvder(props) {
+export function ImageContextProvider(props) {
   const [activeImage, setActiveImage] = useState();
   const [imageIndex, setImageIndex] = useState(0);
   const [currentProject, setCurrentProject] = useState();

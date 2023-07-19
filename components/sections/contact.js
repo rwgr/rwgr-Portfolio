@@ -6,8 +6,26 @@ import emailjs from "@emailjs/browser";
 import Image from "next/image.js";
 import contactIllustration from "../../assets/illustrations/message-sent.svg";
 import { motion } from "framer-motion";
+import { useContext, useEffect } from "react";
+import ActiveContext from "../../store/activeContext.js";
+import { useInView } from "react-intersection-observer";
 
 function Contact() {
+  /* Highlights section in navbar when in view */
+  const activeCtx = useContext(ActiveContext);
+
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 0.2,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      activeCtx.setActive("Contact");
+    }
+  }, [inView]);
+
+  /* Form submission */
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     name: "",
@@ -61,7 +79,7 @@ function Contact() {
   }
 
   return (
-    <div>
+    <div ref={ref}>
       <SectionWrapper
         bgColour="bg-primaryGreen"
         background="bg-contact"

@@ -1,8 +1,8 @@
 import "../styles/globals.css";
 import Layout from "../components/layout/layout";
 import Head from "next/head";
-import { ImageContextProvder } from "../store/imageContext.js";
-import { Fragment } from "react";
+import { ImageContextProvider } from "../store/imageContext.js";
+import { ActiveContextProvider } from "../store/activeContext.js";
 
 export const metadata = {
   title: "Create Next App",
@@ -11,14 +11,19 @@ export const metadata = {
 
 function App({ Component, pageProps }) {
   return (
-    <ImageContextProvder>
-      <Layout>
-        <Head>
-          <meta name="viewport" content="width=device-width, intial-scale=1" />
-        </Head>
-        <Component {...pageProps} />
-      </Layout>
-    </ImageContextProvder>
+    <ImageContextProvider>
+      <ActiveContextProvider>
+        <Layout>
+          <Head>
+            <meta
+              name="viewport"
+              content="width=device-width, intial-scale=1"
+            />
+          </Head>
+          <Component {...pageProps} />
+        </Layout>
+      </ActiveContextProvider>
+    </ImageContextProvider>
   );
 }
 

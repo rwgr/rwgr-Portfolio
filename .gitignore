@@ -37,3 +37,4 @@ next-env.d.ts
 # Custom
 /old-components
 /test
+/sections/tutorials.js

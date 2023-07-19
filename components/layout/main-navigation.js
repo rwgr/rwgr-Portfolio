@@ -1,13 +1,16 @@
 import { Link, animateScroll as scroll } from "react-scroll";
 import Image from "next/image";
-import { useState } from "react";
 import { navLinks } from "../../content/index.js";
 import closeIcon from "../../assets/icons/closeIcon.svg";
 import menuIcon from "../../assets/icons/menuIcon.svg";
 import logo from "../../assets/logo1.svg";
+import { useContext, useState } from "react";
+
+import ActiveContext from "../../store/activeContext.js";
 
 function MainNavigation() {
-  const [active, setActive] = useState("");
+  const activeCtx = useContext(ActiveContext);
+
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
@@ -31,7 +34,9 @@ function MainNavigation() {
               <li
                 key={link.id}
                 className={`${
-                  active === link.title ? "text-highlightGreen" : "text-white"
+                  activeCtx.activeSection === link.title
+                    ? "text-highlightGreen"
+                    : "text-white"
                 } hover:text-highlightGreen text-xl font-medium cursor-pointer`}
               >
                 <Link
@@ -40,7 +45,7 @@ function MainNavigation() {
                   smooth={true}
                   offset={-70}
                   duration={500}
-                  onClick={() => setActive(link.title)}
+                  onClick={() => activeCtx.setActive(link.title)}
                 >
                   {link.title}
                 </Link>
@@ -68,7 +73,7 @@ function MainNavigation() {
                   <li
                     key={link.id}
                     className={`${
-                      active === link.title
+                      activeCtx.activeSection === link.title
                         ? "text-highlightGreen"
                         : "text-white"
                     } hover:text-highlightGreen text-lg font-medium cursor-pointer`}
@@ -81,7 +86,7 @@ function MainNavigation() {
                       duration={500}
                       onClick={() => {
                         setToggleMenu(!toggleMenu);
-                        setActive(link.title);
+                        activeCtx.setActive(link.title);
                       }}
                     >
                       {link.title}
