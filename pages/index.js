@@ -12,7 +12,6 @@ import Overlay from "@/components/ui/overlay.js";
 
 import { useContext } from "react";
 import ImageContext from "../store/imageContext.js";
-import Test from "../components/test/test.js";
 
 function HomePage() {
   const imageCtx = useContext(ImageContext);
@@ -27,7 +26,7 @@ function HomePage() {
           content="Welcome to my portfolio! I'm Robin, a full-stack web developer."
         />
       </Head>
-      <div className="flex flex-col flex-grow">
+      <div className="flex flex-col flex-grow bg-bgGreen">
         <Hero />
         <Intro />
         <Skills />

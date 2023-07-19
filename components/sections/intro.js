@@ -9,7 +9,11 @@ import { myInfo, myCurrent } from "../../content/index.js";
 
 function Intro() {
   return (
-    <SectionWrapper bgColour="bg-secondaryBlue" background="" elementId="about">
+    <SectionWrapper
+      bgColour="bg-secondaryBlue"
+      background="bg-intro"
+      elementId="about"
+    >
       <SectionIntro
         subHeading="About"
         section="About me."

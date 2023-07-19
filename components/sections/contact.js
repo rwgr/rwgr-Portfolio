@@ -62,7 +62,7 @@ function Contact() {
   return (
     <div>
       <SectionWrapper
-        bgColour="bg-primaryGreen"
+        bgColour="bg-bgGreen"
         background="bg-contact"
         elementId="contact"
       >
