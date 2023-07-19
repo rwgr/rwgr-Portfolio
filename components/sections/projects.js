@@ -19,7 +19,6 @@ function Projects() {
 
   useEffect(() => {
     if (inView) {
-      console.log("This is firing");
       activeCtx.setActive("Projects");
     }
   }, [inView]);

@@ -45,9 +45,11 @@ export function ImageContextProvider(props) {
       });
     } else {
       const trimmed = imageTitle.replace(/\s/g, "").toLowerCase();
+
       const project = projectImages.find(
         (project) => project.title === trimmed
       );
+
       setCurrentProject(project);
       setImageIndex(0);
     }

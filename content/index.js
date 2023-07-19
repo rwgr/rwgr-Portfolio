@@ -26,7 +26,7 @@ import vueportfolio1 from "../assets/vueportfolio1.png";
 import vueportfolio2 from "../assets/vueportfolio2.png";
 import vueportfolio3 from "../assets/vueportfolio3.png";
 import vueportfolio4 from "../assets/vueportfolio4.png";
-import portfolio0 from "../assets/portfolio0.png";
+import thisportfolio0 from "../assets/thisportfolio0.png";
 
 import findACoach from "../assets/projects/findACoach.png";
 import natours from "../assets/projects/natours.png";
@@ -299,7 +299,7 @@ export const projectsList = [
     title: "This Portfolio",
     description:
       "My current portfolio hosted at rwgr.dev. Produced using React, Next.js, JavaScript Tailwind CSS and Three.js. A showcase of my web development skills, with a focus on modern design principles and user experience. ",
-    image: portfolio0,
+    image: thisportfolio0,
     demo: null,
     code: "https://github.com/rwgr/rwgr-Portfolio",
     skills: [react, nextjs, tailwind, threejs],
@@ -390,5 +390,9 @@ export const projectImages = [
       vueportfolio3,
       vueportfolio4,
     ],
+  },
+  {
+    title: "thisportfolio",
+    images: [thisportfolio0],
   },
 ];
