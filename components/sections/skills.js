@@ -5,8 +5,8 @@ import SectionIntro from "../SectionIntro.js";
 import { skillsSectionIntro, training } from "../../content/index.js";
 import linkIcon from "../../assets/icons/linkIcon.svg";
 import Link from "next/link.js";
-import { motion } from "framer-motion";
 import skillsIllustration from "../../assets/illustrations/personal-info.svg";
+import { motion } from "framer-motion";
 
 function isOdd(num) {
   return num % 2;
@@ -37,6 +37,7 @@ function Skills() {
             return (
               <motion.li
                 key={index}
+                id="skill"
                 className="flex flex-col items-center justify-between gap-2 cursor-grab"
                 drag
                 dragConstraints={{
@@ -69,6 +70,9 @@ function Skills() {
               return (
                 <Link href={course.link} target="_blank" key={index}>
                   <motion.li
+                    initial={{ x: 10, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{ once: true, amount: 0.4 }}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                     href={course.link}

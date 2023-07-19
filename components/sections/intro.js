@@ -19,10 +19,10 @@ function Intro() {
       <div className="flex flex-col bg-primaryBlue gap-6 py-4 items-center text-xl font-medium sm:font-semibold max-h-fit lg:max-h-[400px] max-w-[900px] mx-auto shadow-xl -mt-10 border-4 border-highlightGreen relative">
         <Image
           src={aboutIllustration}
-          width={350}
+          width={280}
           height="auto"
           alt="About me illustration"
-          className="illustration -top-80 -right-[225px] "
+          className="illustration -top-[200px] -right-[150px] "
         />
         <ul className="list-none mx-0 sm:mx-4 py-2 px-6 grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 content-between">
           {myInfo.map((info, index) => {

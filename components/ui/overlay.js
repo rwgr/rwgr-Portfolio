@@ -8,7 +8,6 @@ import leftIcon from "../../assets/icons/leftIcon.svg";
 
 function Overlay() {
   const imageCtx = useContext(ImageContext);
-
   return (
     <div className="bg-[#000000b3] w-full h-full fixed top-0 left-0 z-50">
       <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center w-full h-full p-2">

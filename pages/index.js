@@ -12,6 +12,7 @@ import Overlay from "@/components/ui/overlay.js";
 
 import { useContext } from "react";
 import ImageContext from "../store/imageContext.js";
+import Test from "../components/test/test.js";
 
 function HomePage() {
   const imageCtx = useContext(ImageContext);
