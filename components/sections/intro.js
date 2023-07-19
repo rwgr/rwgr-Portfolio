@@ -46,7 +46,7 @@ function Intro() {
           />
         </motion.div>
 
-        <div className="flex flex-col bg-secondaryBlue gap-6 py-4 items-center text-xl font-medium sm:font-semibold max-h-fit lg:max-h-[400px] max-w-[900px] mx-auto shadow-xl -mt-10 border-4 border-highlightGreen relative">
+        <div className="flex flex-col bg-secondaryBlue gap-6 py-4 items-center text-xl font-medium sm:font-semibold max-h-fit lg:max-h-[400px] max-w-[900px] mx-auto shadow-xl  border-4 border-highlightGreen relative rounded-xl ">
           <Image
             src={aboutIllustration}
             width={280}

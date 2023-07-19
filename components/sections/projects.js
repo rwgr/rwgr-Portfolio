@@ -19,7 +19,7 @@ function Projects() {
 
   useEffect(() => {
     if (inView) {
-      activeCtx.setActive("Projects");
+      activeCtx.setActive("Experience");
     }
   }, [inView]);
 

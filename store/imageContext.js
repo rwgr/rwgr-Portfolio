@@ -22,6 +22,8 @@ export function ImageContextProvider(props) {
 
   function showImageHandler(imageTitle) {
     // Overlay image gallery navigation
+
+    // Image gallery navigation
     if (imageTitle === "right" || imageTitle === "left") {
       const direction = imageTitle;
       const length = currentProject.images.length;
@@ -44,6 +46,7 @@ export function ImageContextProvider(props) {
         return prevIndex;
       });
     } else {
+      // Clicking on a project image from the project section
       const trimmed = imageTitle.replace(/\s/g, "").toLowerCase();
 
       const project = projectImages.find(

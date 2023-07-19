@@ -49,7 +49,7 @@ function Skills() {
             alt="Personal information illustration"
             className="illustration -top-96 -right-16"
           />
-          <ul className="grid grid-cols-3 md:grid-cols-4 gap-10 mx-auto shadow-2xl p-4 items-start">
+          <ul className="grid grid-cols-3 md:grid-cols-4 gap-10 mx-auto shadow-2xl p-4 items-start rounded-xl">
             {skillsList.map((skill, index) => {
               return (
                 <motion.li
@@ -78,7 +78,7 @@ function Skills() {
               );
             })}
           </ul>
-          <div className="p-0 sm:p-5 shadow-2xl  ">
+          <div className="p-0 sm:p-5 shadow-2xl rounded-xl ">
             <h2 className="uppercase text-xl font-semibold tracking-wider text-end mb-4 lg:mb-0">
               Completed Courses
             </h2>
