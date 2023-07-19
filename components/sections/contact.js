@@ -62,7 +62,7 @@ function Contact() {
   return (
     <div>
       <SectionWrapper
-        bgColour="bg-bgGreen"
+        bgColour="bg-primaryGreen"
         background="bg-contact"
         elementId="contact"
       >
@@ -80,7 +80,7 @@ function Contact() {
             className="illustration -top-[330px] right-12"
           />
           <form
-            className="py-10 px-4 sm:px-6  bg-secondaryBlue items-center text-xl font-medium sm:font-semibold max-h-[520px] min-w-[200px] sm:min-w-[600px] max-w-[900px] mx-2 sm:mx-auto shadow-xl -mt-10  rounded-xl flex flex-col gap-6 "
+            className="py-10 px-4 sm:px-6  bg-primaryBlue items-center text-xl font-medium sm:font-semibold max-h-[520px] min-w-[200px] sm:min-w-[600px] max-w-[900px] mx-2 sm:mx-auto shadow-xl -mt-10  rounded-xl flex flex-col gap-6 "
             onSubmit={handleSubmit}
           >
             <div className="flex flex-col gap-2 w-full">

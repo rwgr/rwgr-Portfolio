@@ -26,7 +26,7 @@ function HomePage() {
           content="Welcome to my portfolio! I'm Robin, a full-stack web developer."
         />
       </Head>
-      <div className="flex flex-col flex-grow bg-bgGreen">
+      <div className="flex flex-col flex-grow bg-primaryGreen">
         <Hero />
         <Intro />
         <Skills />

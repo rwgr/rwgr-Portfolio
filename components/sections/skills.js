@@ -15,7 +15,7 @@ function isOdd(num) {
 function Skills() {
   return (
     <SectionWrapper
-      bgColour="bg-shadeGreen"
+      bgColour="bg-primaryGreen"
       background="bg-skills"
       elementId="training"
     >
@@ -77,7 +77,7 @@ function Skills() {
                     whileTap={{ scale: 0.9 }}
                     href={course.link}
                     target="_blank"
-                    className={`flex gap-5 items-center rounded-lg p-2 w-full border-b-2 border-highlightGreen ${
+                    className={`flex gap-5 items-center rounded-lg p-2 w-full border-b-4 border-highlightGreen ${
                       isOdd(index) ? "bg-primaryBlue" : " bg-primaryBlue"
                     } hover:border-white hover:border-b-4  cursor-pointer  `}
                   >

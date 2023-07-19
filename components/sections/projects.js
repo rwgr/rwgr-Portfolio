@@ -8,7 +8,7 @@ import projectIllustration from "../../assets/illustrations/programming.svg";
 function Projects(props) {
   return (
     <SectionWrapper
-      bgColour="bg-secondaryGreen"
+      bgColour="bg-secondaryBlue"
       background="bg-projects"
       elementId="projects"
     >
@@ -25,7 +25,7 @@ function Projects(props) {
           alt="Programming illustration"
           className="illustration -top-96 right-0"
         />
-        <ul className="mx-auto flex gap-20 flex-wrap justify-center ">
+        <ul className="mx-auto flex gap-32 flex-wrap justify-center ">
           {projectsList.map((project) => {
             return <ProjectCard key={project.id} project={project} />;
           })}

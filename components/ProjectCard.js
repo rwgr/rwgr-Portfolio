@@ -21,7 +21,7 @@ function ProjectCard(props) {
       >
         <li
           key={props.project.id}
-          className="max-w-[400px]  p-4 sm:p-8 shadow-xl rounded-xl flex flex-col gap-6 justify-between mx-2 card bg-secondaryBlue min-h-[600px]"
+          className="max-w-[400px]  p-4 sm:p-8 shadow-xl rounded-xl flex flex-col gap-6 justify-between mx-2 card bg-primaryBlue min-h-[600px]"
         >
           <div className="flex flex-col gap-5">
             <div className="flex flex-col gap-1">
