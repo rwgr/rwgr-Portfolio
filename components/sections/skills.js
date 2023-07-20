@@ -103,7 +103,7 @@ function Skills() {
                         width={40}
                         height={40}
                         alt="Link icon"
-                        className="hover:scale-90 rounded-lg p-1 hover:bg-highlightGreen transition duration-300 ease-in-out"
+                        className="infoIcon"
                       />
 
                       <p className=" text-base font-semibold">{course.title}</p>

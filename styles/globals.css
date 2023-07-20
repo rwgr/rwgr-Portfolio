@@ -61,6 +61,7 @@ textarea {
   resize: none;
 }
 
+/* Background svg waves */
 .bg-intro {
   background-image: url("../assets/backgrounds/bg-intro.svg");
 }
@@ -85,12 +86,29 @@ textarea {
   background-position: center;
 }
 
+/* intro and skills icons with links */
 .infoIcon {
   @apply rounded-md cursor-pointer transition-all duration-300 ease-linear p-0.5 hover:bg-primaryGreen;
 }
 
+/* icons for image overlay, ui/overlay.js */
+.overlayIcon {
+  @apply transition-all duration-300 ease-out cursor-pointer scale-75 lg:scale-125 hover:p-2 z-20 rounded-3xl bg-highlightBlue lg:bg-opacity-0 hover:bg-highlightGreen mx-5;
+}
+
+/* background illustrations */
 .illustration {
   @apply absolute -z-10 invisible xl:visible scale-0 xl:scale-100;
+}
+
+/* removes image ghost on skills icon drag */
+.ghost-remove {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 /* Card animated background */
@@ -143,17 +161,28 @@ textarea {
   filter: blur(3.5rem);
 }
 
-/* Card animated background */
+/* Scrollbar */
 
-.ghost-remove {
-  user-drag: none;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+::-webkit-scrollbar {
+  width: 0.5rem;
 }
 
-.overlayIcon {
-  @apply transition-all duration-300 ease-out cursor-pointer scale-75 lg:scale-125 hover:p-2 z-20 rounded-3xl bg-highlightBlue lg:bg-opacity-0 hover:bg-highlightGreen mx-5;
+::-webkit-scrollbar-track {
+  background: #162234;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2ccbb1;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #30bca0;
+}
+
+@supports (scrollbar-color: #2ccbb1 #162234) {
+  * {
+    scrollbar-color: #2ccbb1 #162234;
+    scrollbar-width: thin;
+  }
 }
