@@ -89,9 +89,10 @@ function Skills() {
                     <motion.li
                       initial={{ x: 10, opacity: 0 }}
                       whileInView={{ x: 0, opacity: 1 }}
-                      viewport={{ once: true, amount: 0.4 }}
+                      viewport={{ once: true, amount: 0 }}
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
+                      transition={{ duration: 1 }}
                       href={course.link}
                       target="_blank"
                       className={`flex gap-5 items-center rounded-lg p-2 w-full border-b-4 border-highlightGreen ${

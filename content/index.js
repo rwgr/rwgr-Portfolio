@@ -291,7 +291,7 @@ export const projectsList = [
       "My previous portfolio, made using Vue, utilising Tailwind CSS for styling and Three.js to create an animated background. The background can be enabled in the sidebar and comes with controls to change its appearance.",
     image: vueportfolio0,
     demo: null,
-    code: "https://github.com/rwgr/Local-Crime-Checker",
+    code: "https://github.com/rwgr/Portfolio",
     skills: [vue, threejs, tailwind, javascript],
   },
   {

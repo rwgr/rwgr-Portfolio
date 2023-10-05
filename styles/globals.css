@@ -162,7 +162,6 @@ textarea {
 }
 
 /* Scrollbar */
-
 ::-webkit-scrollbar {
   width: 0.5rem;
 }
@@ -180,6 +179,7 @@ textarea {
   background: #30bca0;
 }
 
+/* Firefox scrollbar */
 @supports (scrollbar-color: #2ccbb1 #162234) {
   * {
     scrollbar-color: #2ccbb1 #162234;
